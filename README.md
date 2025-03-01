@@ -15,10 +15,11 @@
 -This command will initlize the git repo inside your system folder
    ```sh
    git init
-
+   ```
 **Check status**
 -This command will check the status in which branch you are now. How many file changed and added.
 
    ```sh
    git status
+   ```
 
