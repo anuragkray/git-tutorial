@@ -17,7 +17,8 @@
 
    ```sh
    git init
-   ### 📜 Check status
+   
+### 📜 Check status
 2. This command will check the status in which branch you are now. How many file changed and added.
 
    ```sh
