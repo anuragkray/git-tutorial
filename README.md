@@ -39,7 +39,7 @@ you can clone the repo using command.The **.git** folder will created in the fol
    git switch -c <new_branch_name>
    git checkout -b <new_branch_name>
    ```
-**Commands to add or load the changes into stack**
+**Commands to add or load the changes into repository**
  - **git add .** OR **git add -A** OR git add * : To add all the file that is appearing in changes
  - **git add <particular_file_name>** : To add particular file from changes appear in changes.
 #
@@ -54,7 +54,7 @@ you can clone the repo using command.The **.git** folder will created in the fol
    git reset
    git restore <file_name>
    ```
-**Command to commit the changes into the stack**
+**Command to commit the changes to the repository**
 #### amend is use for overwrite the earlier commit message or with --no-edit to update in earlier commit.
    ```sh
    git commit -m "Your_Message_That will_Show_In_Commit_Section"
@@ -62,7 +62,8 @@ you can clone the repo using command.The **.git** folder will created in the fol
    git commit --amend -m "New commit message" 
    ```
    -After the amend command you have to do **--force** if you have pushed the commit earlier.
-**Command to push the changes**
+#
+**Command to push the changes to the repository**
    ```sh
    git push -u origin <branch_name>
    git push --set-upstrem origin <branch_name>
@@ -106,7 +107,16 @@ you can clone the repo using command.The **.git** folder will created in the fol
    d4e5f6g //commit 2
    git cherry-pick a1b2c3d
    ```
-
+**If you are trying to push the changes to the repository and you are getting error like below, try this command**
+#### error: failed to push some ref's to <https://<name>.com>
+   ```sh
+   git pull --rebase
+   [After that do]
+   git push
+   [If getting merge conflict resolve it and then]
+   git rebase --continue
+   git push
+   ```
 
 
 
