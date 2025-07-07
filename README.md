@@ -117,6 +117,19 @@ you can clone the repo using command.The **.git** folder will created in the fol
    git rebase --continue
    git push
    ```
+**IIf you are working with group of developers and they have given multiple file with changes or ask you to give your multiple changes in file how you will do that**
+#### Try git patch
 
+#### how to create patch file
+```sh
+git diff > <file_name.patch>
+```
+
+#### How to apply patch file
+   ```sh
+  git apply <file_name.patch>
+   ```
+
+#### Note : Download the patch file given by developer & attach to your root of project & in terminal run the apply command
 
 
